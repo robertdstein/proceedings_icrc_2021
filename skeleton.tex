@@ -5,9 +5,10 @@
 \usepackage{subcaption}
 \usepackage{enumerate}
 \usepackage{aas_macros}
+\usepackage{url}
 
 \title{Neutrinos and Tidal Disruption Events}
- \ShortTitle{Neutrinos and TDEs}
+\ShortTitle{Neutrinos and TDEs}
 
 \author*[a, b]{Robert Stein}
 
@@ -20,7 +21,7 @@
 
 \emailAdd{robert.stein@desy.de}
 
-\abstract{Abstract text}
+\abstract{Tidal Disruption Events (TDEs) occur when stars pass close to supermassive black holes. }
 
 \FullConference{37$^{\rm{th}}$ International Cosmic Ray Conference (ICRC 2021)\\
 		July 12th -- 23rd, 2021\\
@@ -34,9 +35,9 @@
 
 \section{Tidal Disruption Events}
 
-A Tidal Disruption Event (TDE) occurs when a star passes sufficiently close to a supermassive black hole (SMBH), such that the tidal forces exceed the self-gravity holding the star together. The star then disintegrates, and is partially accreted onto the SMBH, generating an electromagnetic flare that can then be detected on Earth. TDEs have also been observed to generate relativistic jets \cite{swift_j1644_11} or outflows \cite{alexander_16}, but these signatures are not ubiquitous. Indeed, it is an area of active research to understand when such outflows or jets are launched \cite{radio_tde_summary}.
+A Tidal Disruption Event (TDE) occurs when a star passes sufficiently close to a supermassive black hole (SMBH), such that the tidal forces exceed the self-gravity holding the star together \cite{rees_tde_88}. The star then disintegrates and is partially accreted onto the SMBH, generating an electromagnetic flare that can then be detected on Earth \cite{gezari_21}. TDEs have also been observed to launch relativistic jets \cite{swift_j1644_11} or outflows \cite{van_velzen_16, alexander_16, radio_tde_summary}, but these signatures are not ubiquitous. Indeed, it is an area of active research to understand when such outflows or jets are launched \cite{radio_tde_summary}.
 
-In order to answer such questions, TDEs must first be identified by telescopes, so one might reasonably ask `what does a TDE look like?'. It turns out that the probable answer is `it depends on where you looking from'. TDEs are generally understood within the framework of a `unified TDE model' \cite{dai_18}, as shown in Figure \ref{fig:tde_dai}, somewhat akin to the blazar unification models \cite{95_agn_unification}. There is a SMBH with an accretion disk, and stellar debris stream, for which a substantial fraction of radiation will be reprocessed by outflows. A TDE viewed side-on might only exhibit reprocessed UV/Optical emission, while a TDE viewed face-on could exhibit bright X-ray emission, for example from a jet. Most TDEs would be viewed at intermediate viewing angles, and thus exhibit a mixture of these properties.
+In order to understand the properties of TDEs, candidates must first be identified by telescopes, so one might reasonably ask `\emph{what does a TDE look like?}'. It turns out that the answer is far from straightforward. Models for electromagnetic radiation from TDEs tend to fall into two broad classes, depending on whether the stellar debris is thought to rapidly circularise or instead remains highly eccentric \cite{roth_20}. For the case of `rapid circularisation', the electromagnetic radiation can be explained within the framework of a `unified TDE model' \cite{dai_18}, as shown in Figure \ref{fig:tde_dai}, somewhat akin to the blazar unification models \cite{95_agn_unification}. There would be a central SMBH with a rapidly-formed accretion disk, and a stellar debris stream, for which a substantial fraction of radiation will be reprocessed. A TDE viewed side-on might only exhibit reprocessed UV/Optical emission, while a TDE viewed face-on could exhibit bright X-ray emission, for example from a jet. For TDEs viewed at intermediate viewing angles, one would expect a mixture of these scenarios. Alternatively, the stellar debris might not rapidly form an accretion disk. Instead, the electromagnetic emission could arise from shocks in the debris \cite{roth_20}. 
 
 \begin{figure}[!ht]
 	\centering \includegraphics[width=0.45\textwidth]{figures/dai_unified_model}
@@ -46,7 +47,7 @@ In order to answer such questions, TDEs must first be identified by telescopes, 
 
 While TDEs were first predicted in the late 1980s \cite{rees_tde_88}, actually detecting them in great numbers has long proved challenging. It is interesting to consider what would have been written about TDEs at the previous 36th ICRC in 2019. At that time, there were just $\sim$2 dozen `TDE candidates' reported in the literature, detected across a range of observatories and wavelengths. The vast majority had relatively sparse lightcurves and little multi-band coverage, while only a couple had been detected pre-peak. However, a then-recent publication from the ZTF survey was confidently predicting that a step change in TDE discovery rates lay just around the corner, with an imminent doubling of TDE sample size \cite{ztf_19_science}.
 
-Fortunately, this work was instead presented at the 37th ICRC in 2021, at a time when this new era of high-frequency TDE discovery had arrived. ZTF published interim results from the first 18 months of the survey in 2020, reporting the detection of 17 TDEs \cite{van_velzen_20}. ZTF alone is now finding TDEs at a rate > 1 per month, though ZTF is of course not operating alone. TDEs are also being discovered by other optical surveys including ASAS-SN \cite{holoien_16}, PanSTARRS \cite{gezari_12}, ATLAS CITE and GAIA CITE, X-ray surveys such as eROSITA \cite{erosita_tde_21}, as well as radio surveys such as VLASS CITE. As can be seen in Figure \ref{fig:tde_disc}, the sample of confirmed and probable TDEs has vastly increased to more than 70, a doubling since the 36th ICRC. Moreover, these ZTF-detected TDEs are generally detected well before peak with high-cadence observations, have uniform multi-wavelength coverage at UV and X-ray wavelengths \cite{van_velzen_20}, as well as some radio coverage. 
+Fortunately, this contribution was instead presented at the 37th ICRC in 2021, at a time when this new era of high-frequency TDE discovery had arrived. ZTF published interim results from the first 18 months of the survey in 2020, reporting the detection of 17 TDEs \cite{van_velzen_20}. ZTF alone is now finding TDEs at a rate > 1 per month, though ZTF is of course not operating alone. TDEs are also being discovered by other optical surveys including PanSTARRS \cite{gezari_12}, ASAS-SN \cite{holoien_16}, GAIA \cite{gaia_tde_18} and ATLAS \cite{nicholl_19}, X-ray surveys such as eROSITA \cite{erosita_tde_21}, as well as radio surveys such as CNSS \cite{anderson_20} and FIRST/VLASS \cite{ravi_21}. As can be seen in Figure \ref{fig:tde_disc}, the sample of confirmed and probable TDEs has vastly increased to more than 70, a doubling since the 36th ICRC. Moreover, these ZTF-detected TDEs are generally detected well before peak with high-cadence observations, have uniform multi-wavelength coverage at UV and X-ray wavelengths \cite{van_velzen_20}, as well as some radio coverage. 
 
 \begin{figure}[!ht]
 	\centering \includegraphics[width=0.45\textwidth]{figures/ztf_prediction}
@@ -60,7 +61,7 @@ While TDEs are intrinsically rare phenomena, with rates less than 1\% of the cor
 
 \section{High-Energy Neutrinos}
 
-The field of neutrino astronomy has undergone a similar transformation in recent years. A flux of high-energy neutrinos was first discovered by IceCube in 2013 \cite{ic_astro_13}, launching an ongoing search for sources of these astrophysical neutrinos. Much focus at the 36th ICRC was devoted to the then-recent identification of the flaring blazar TXS 0506+056 as a probable neutrino source \cite{ic_txs_mm_18, kappes_19}. That association was enabled by the IceCube Realtime program \cite{ic_realtime_17}, in which the arrival time of probable astrophysical neutrinos are automatically reported in low-latency via the Gamma-ray Coordination Network (GCN) framework.
+The field of neutrino astronomy has undergone a similar transformation in recent years. A flux of high-energy neutrinos was first discovered by IceCube in 2013 \cite{ic_astro_13}, launching an ongoing search for sources of these astrophysical neutrinos. Much focus at the 36th ICRC was devoted to the then-recent identification of the flaring blazar TXS 0506+056 as a probable neutrino source \cite{ic_txs_mm_18, kappes_19}. That association was enabled by the IceCube Realtime program \cite{ic_realtime_17}, in which the arrival time of probable astrophysical neutrinos are automatically reported in low-latency via the Gamma-ray Coordination Network (GCN) framework \footnote{\url{https://gcn.gsfc.nasa.gov/gcn/gcn3_circulars.html}}.
 
 IceCube also announced at the 36th ICRC that the previous streams of high-energy neutrino alerts, High-Energy Starting Event (HESE) and Extremely-High Energy (EHE)  events, had just been replaced by new unified `Gold' and `Silver' event streams in June 2019 \cite{ic_realtime_19}. These new alerts promised to provide a substantially elevated rate of high-quality neutrino alerts. 
 
@@ -107,7 +108,7 @@ AT2019dsg was first discovered by ZTF in April 2019, as part of a systematic sea
 	\label{fig:bran_uv_opt}
 \end{figure}
 
-The neutrino IC191001A was detected approximately 170 days after the TDE discovery \cite{bran}, as illustrated by the dashed line in Figure \ref{fig:bran_uv_opt}. Following the identifiaction of AT2019dsg as a candidate neutrino source, additional observations were conducted with Swift-UVOT. The source continued to be detected at these later times, with an apparent plateau in emission consistent with the formation of an accretion disk \cite{bran}. More broadly, like most TDEs, the UV/optical emission of AT2019dsg was well-described by thermal emission from a blackbody of temperature $\sim10^{4.6}$K and radius $\sim10^{14.5}$cm, reaching a peak luminosity of $\sim10^{44.5}$ erg s$^{-1}$. This inferred temperature was somewhat hotter than a typical TDE \cite{van_velzen_20}. Relative to the broader ZTF TDE population, AT2019dsg was both relatively bright and also relatively close (z=0.051, corresponding to a luminosity distance of 230 Mpc), meaning that AT2019dsg had second-brightest bolometric energy flux of all ZTF TDEs \cite{van_velzen_20}. Accounting for all neutrino follow-up campaigns listed in Figure \ref{fig:ztf_stats_bran}, the probability of finding such a bright TDE by chance with our neutrino follow-up program is just 0.2\%.
+The neutrino IC191001A was detected approximately 170 days after the TDE discovery \cite{bran}, as illustrated by the dashed line in Figure \ref{fig:bran_uv_opt}. Following the identification of AT2019dsg as a candidate neutrino source, additional observations were conducted with Swift-UVOT. The source continued to be detected at these later times, with an apparent plateau in emission consistent with the formation of an accretion disk \cite{bran}. More broadly, like most TDEs, the UV/optical emission of AT2019dsg was well-described by thermal emission from a blackbody of temperature $\sim10^{4.6}$K and radius $\sim10^{14.5}$cm, reaching a peak luminosity of $\sim10^{44.5}$ erg s$^{-1}$. This inferred temperature was somewhat hotter than a typical TDE \cite{van_velzen_20}. Relative to the broader ZTF TDE population, AT2019dsg was both relatively bright and also relatively close (z=0.051, corresponding to a luminosity distance of 230 Mpc), meaning that AT2019dsg had second-brightest bolometric energy flux of all ZTF TDEs \cite{van_velzen_20}. Accounting for all neutrino follow-up campaigns listed in Figure \ref{fig:ztf_stats_bran}, the probability of finding such a bright TDE by chance with our neutrino follow-up program is just 0.2\%.
 
 \begin{figure}
 	\begin{subfigure}{0.45\textwidth}
@@ -178,11 +179,9 @@ The detection of a single neutrino-TDE coincidence with our ZTF program due to r
 
 \section{Summary}
 
-The search for sources of astrophysical neutrinos is still ongoing, and many open questions remain unanswered. Dedicated neutrino follow-up programs like the one operated by ZTF  can be powerful tools to address these questions. The ZTF program has already identified the bright TDE AT2019dsg as a probable neutrino source. Conditions in this TDE appear consistent with production of $\sim$0.2 PeV neutrino. TDEs like AT2019dsg are being discovered in ever-increasing numbers, offering the opportunity for how this source fits into the broader TDE population. In parallel, the ZTF neutrino follow-up program continues to operate, and has already identified a second candidate neutrino-TDE. With luck, the 38th ICRC may feature yet more candidate neutrino sources, and further insight into the relative contributions of different populations.
+The search for sources of astrophysical neutrinos is still ongoing, and many open questions remain unanswered. Dedicated neutrino follow-up programs like the one operated by ZTF can be powerful tools to address these questions. The ZTF program has already identified the bright TDE AT2019dsg as a probable neutrino source. Conditions in this TDE appear consistent with production of $\sim$0.2 PeV neutrino. TDEs like AT2019dsg are being discovered in ever-increasing numbers, offering the opportunity for how this source fits into the broader TDE population. In parallel, the ZTF neutrino follow-up program continues to operate, and has already identified a second candidate neutrino-TDE. With luck, the 38th ICRC may feature yet more candidate neutrino sources, and further insight into the relative contributions of different populations.
 
-\section{Acknowledgements}
-
-Thanks to... Funding?
+\acknowledgments{I would like to thank Anna Franckowiak, Marek Kowalski, Simeon Reusch and Sjoert van Velzen for fruitful discussion. I would also like to thank the IceCube Collaboration for publishing high-energy neutrino alerts, without which such research would not be possible.}
 
 \bibliographystyle{ICRC}
 \bibliography{refs}
