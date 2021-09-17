@@ -21,7 +21,7 @@
 
 \emailAdd{robert.stein@desy.de}
 
-\abstract{Tidal Disruption Events (TDEs) occur when stars pass close to supermassive black holes. }
+\abstract{Tidal Disruption Events (TDEs) occur when stars pass close to supermassive black holes, and have long been predicted to emit cosmic rays and neutrinos. Recently the TDE AT2109dsg was identified in spatial and temporal coincidence with high-energy neutrino IC191001A as part of the Zwicky Transient Facility (ZTF) neutrino follow-up program, providing the first observational evidence supporting these objects as multi-messenger sources. In these proceedings, I will place the recent results of our ZTF neutrino follow-up program into the broader context of developments in TDE and neutrino astronomy.}
 
 \FullConference{37$^{\rm{th}}$ International Cosmic Ray Conference (ICRC 2021)\\
 		July 12th -- 23rd, 2021\\
@@ -61,7 +61,7 @@ While TDEs are intrinsically rare phenomena, with rates less than 1\% of the cor
 
 \section{High-Energy Neutrinos}
 
-The field of neutrino astronomy has undergone a similar transformation in recent years. A flux of high-energy neutrinos was first discovered by IceCube in 2013 \cite{ic_astro_13}, launching an ongoing search for sources of these astrophysical neutrinos. Much focus at the 36th ICRC was devoted to the then-recent identification of the flaring blazar TXS 0506+056 as a probable neutrino source \cite{ic_txs_mm_18, kappes_19}. That association was enabled by the IceCube Realtime program \cite{ic_realtime_17}, in which the arrival time of probable astrophysical neutrinos are automatically reported in low-latency via the Gamma-ray Coordination Network (GCN) framework \footnote{\url{https://gcn.gsfc.nasa.gov/gcn/gcn3_circulars.html}}.
+The field of neutrino astronomy has undergone a similar transformation in recent years. A flux of high-energy neutrinos was first discovered by IceCube in 2013 \cite{ic_astro_13}, launching an ongoing search for sources of these astrophysical neutrinos. Much focus at the 36th ICRC was devoted to the then-recent identification of the flaring blazar TXS 0506+056 as the first probable neutrino source \cite{ic_txs_mm_18, kappes_19}. That association was enabled by the IceCube Realtime program \cite{ic_realtime_17}, in which the arrival time of probable astrophysical neutrinos are automatically reported in low-latency via the Gamma-ray Coordination Network (GCN) framework \footnote{\url{https://gcn.gsfc.nasa.gov/gcn/gcn3_circulars.html}}.
 
 IceCube also announced at the 36th ICRC that the previous streams of high-energy neutrino alerts, High-Energy Starting Event (HESE) and Extremely-High Energy (EHE)  events, had just been replaced by new unified `Gold' and `Silver' event streams in June 2019 \cite{ic_realtime_19}. These new alerts promised to provide a substantially elevated rate of high-quality neutrino alerts. 
 
@@ -79,13 +79,13 @@ One such search for neutrino sources is performed by the Zwicky Transient Facili
 
 \begin{figure}[!ht]
 	\centering \includegraphics[width=0.50\textwidth]{figures/ztf_fov}
-	\caption{The ZTF field-of-view (orange), in comparison to other major telescopes CITE.}
+	\caption{The ZTF field-of-view (orange), in comparison to other major telescopes \cite{laher_18}.}
 	\label{fig:ztf_fov}
 \end{figure}
 
 ZTF is also well-suited to multi-messenger searches for electromagnetic counterparts to high-energy neutrinos, a task performed with our \emph{ZTF neutrino follow-up program} \cite{bran}. IceCube neutrino alerts have a typical localisation of $\sim$10-20 sq. deg., limited by systematic uncertainties related to the optical properties of the Antarctic ice \cite{ic_resimulations_21}. Such regions are generally covered by 1 or 2 ZTF fields. We trigger dedicated Target-Of-Opportunity (ToO) observations of these fields in response to a public IceCube alert. 
 
-These observations are then processed by our multi-messenger data analysis pipeline, \emph{nuztf}, built using the Ampel software framework \cite{ampel, nuztf}. Though ZTF will typically detect $\sim$500,000 objects on a given night, this number can be substantially reduced by requiring both spatial coincidence (we restrict ourselves to objects lovcalted within the 90\% localisation reported by IceCube) and temporal coincidence (we only consider objects which are detected at least once after the neutrino detection). For coincident objects, after rejecting stars and solar-system objects, we aim to spectroscopically classify all remaining candidates. These candidates are checked to see whether they belong to populations that have been proposed as possible cosmic ray and neutrino sources. These include gamma-ray bursts \cite{waxman_bahcall_97_grb}, supernovae with evidence of CSM interaction CITE, Active Galactic Nuclei (AGN) \cite{stecker_91} and in particular blazars CITE, and TDEs \cite{winter_bran_21, winter_icrc_21, murase_tde_20, hayasaki_19, liu21_bran}.
+These observations are then processed by our multi-messenger data analysis pipeline, \emph{nuztf}, built using the Ampel software framework \cite{ampel, nuztf}. Though ZTF will typically detect $\sim$500,000 objects on a given night, this number can be substantially reduced by requiring both spatial coincidence (we restrict ourselves to objects lovcalted within the 90\% localisation reported by IceCube) and temporal coincidence (we only consider objects which are detected at least once after the neutrino detection). For coincident objects, after rejecting stars and solar-system objects, we aim to spectroscopically classify all remaining candidates. These candidates are checked to see whether they belong to populations that have been proposed as possible cosmic ray and neutrino sources. These include gamma-ray bursts \cite{waxman_bahcall_97_grb}, supernovae with evidence of CSM interaction \cite{murase_csm_sn_11} or choked jet \cite{senno_choked_jets_16}, Active Galactic Nuclei (AGN) \cite{stecker_91} and in particular blazars \cite{mannheim_93}, and TDEs \cite{farrar_09, Biehl_tde_uhecr, hayasaki_19, winter_bran_21, winter_icrc_21, murase_tde_20, liu21_bran}.
 
 \begin{figure}[!ht]
 	\centering 
@@ -118,11 +118,11 @@ The neutrino IC191001A was detected approximately 170 days after the TDE discove
 		\includegraphics[width=\linewidth]{figures/outflow_energy}
 		\includegraphics[width=\linewidth]{figures/outflow_radius}
 	\end{subfigure}
-	\caption{Left: Radio data of AT2019dsg, including AMI-LA, VLA and MeerKAT, from \cite{bran}. Upper Right: Inferred outflow energy. Lower left: Inferred outflow radius.}
+	\caption{Left: Radio data of AT2019dsg, including AMI-LA, VLA and MeerKAT, from \cite{bran}. Upper Right: Inferred outflow energy. Lower Right: Inferred outflow radius.}
 	\label{fig:bran_radio}
 \end{figure}
 
-More unusually, AT2019dsg was one of the few TDEs also detected at radio wavelengths \cite{radio_tde_summary}, with non-thermal emission lasting through to the time of neutrino detection \cite{bran}. Observations from AMI-LA, VLA and MeerKAT are summarised in Figure \ref{fig:bran_radio}. These observations have been interpreted as synchrotron emission from a mildly-relativistic outflow \cite{bran, cendes_21, mohan_21, matsumoto_21}. Others have interpreted this as possible emission from a relativistic jet \cite{liu21_bran, winter_bran_21}, though this has been disfavoured by others \cite{mohan_21, cendes_21}. In any case, the radio data confirm long-lived particle acceleration in AT2019dsg, and provide a conservative baseline for non-thermal energy output of the source \cite{bran}. Whether such outflows are common or ubiquitous remains an open question \cite{radio_tde_summary}.
+Another unusual property of AT2019dsg was the accompanying radio detection, a feature shared by only a handful of other TDEs \cite{radio_tde_summary}, with non-thermal emission lasting through to the time of neutrino detection \cite{bran}. Observations from AMI-LA, VLA and MeerKAT are summarised in Figure \ref{fig:bran_radio}. These observations have been interpreted as synchrotron emission from a mildly-relativistic outflow \cite{bran, cendes_21, mohan_21, matsumoto_21}. Others have interpreted this as possible emission from a relativistic jet \cite{liu21_bran, winter_bran_21}, though this has been disfavoured by others \cite{mohan_21, cendes_21}. In any case, the radio data confirm long-lived particle acceleration in AT2019dsg, and provide a conservative baseline for non-thermal energy output of the source \cite{bran}. Whether such outflows are common or ubiquitous remains an open question \cite{radio_tde_summary}.
 
 \section{Neutrinos from Tidal Disruption Events}
 
@@ -183,7 +183,7 @@ The search for sources of astrophysical neutrinos is still ongoing, and many ope
 
 \acknowledgments{I would like to thank Anna Franckowiak, Marek Kowalski, Simeon Reusch and Sjoert van Velzen for fruitful discussion. I would also like to thank the IceCube Collaboration for publishing high-energy neutrino alerts, without which such research would not be possible.}
 
-\bibliographystyle{ICRC}
+\bibliographystyle{JHEP}
 \bibliography{refs}
 
 %\begin{thebibliography}{99}
